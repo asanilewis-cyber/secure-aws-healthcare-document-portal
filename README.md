@@ -47,6 +47,10 @@ AWS IAM, MFA, least privilege, S3 access controls, secure document storage, encr
 - [Architecture Diagram](diagrams/architecture.png)
 - [Resume and LinkedIn Descriptions](LINKEDIN_AND_RESUME.md)
 - [Screenshot Evidence Email Templates](SCREENSHOT_EMAILS.md)
+### Verified AWS Security Evidence
 
+[View Security Testing Screenshots and Results](evidence/README.md)
+
+Includes IAM least-privilege configuration, S3 public access protection, CloudTrail auditing, CloudWatch monitoring, and unauthorized deletion testing.
 ## Project Status
 Seven-day hands-on AWS security lab completed. GitHub documentation published; sanitized evidence screenshots may be added separately.
