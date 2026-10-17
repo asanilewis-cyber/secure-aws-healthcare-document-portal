@@ -1,27 +1,52 @@
-# Screenshot evidence checklist
+# Secure AWS Healthcare Document Portal
 
-**Do not publish unredacted AWS console screenshots.** Remove account ID, account-specific URLs, email, usernames where sensitive, full ARNs, secrets, passwords, MFA codes, and private object contents. Use only fictional data.
+## Project Overview
+A hands-on AWS cloud security lab demonstrating how a fictional healthcare organization can protect documents using identity and access management, restricted storage permissions, encryption, monitoring, and audit visibility.
 
-| Filename to add | What screenshot should show | Email subject |
-|---|---|---|
-| `01-iam-mfa.png` | IAM user MFA enabled | AWS Lab \| IAM User MFA Enabled |
-| `02-iam-three-policies.png` | Three distinct group inline policies | AWS Lab \| IAM Least-Privilege Policies |
-| `03-s3-public-access.png` | Block all public access On | AWS Lab \| S3 Public Access Blocked |
-| `04-s3-encryption-versioning.png` | SSE-S3 and versioning enabled | AWS Lab \| S3 Encryption and Versioning |
-| `05-authorized-download.png` | Approved object listing or download evidence | AWS Day 6 \| Authorized S3 Access |
-| `06-denied-deletion.png` | Actual Access Denied after delete attempt | AWS Day 6 \| Unauthorized Deletion Blocked |
-| `07-cloudtrail-events.png` | CloudTrail management events visible | AWS Day 6 \| CloudTrail Audit Evidence |
-| `08-cloudwatch-objects.png` | S3 NumberOfObjects graph | AWS Day 5 \| CloudWatch S3 Monitoring |
-| `09-budget.png` | $5 monthly AWS budget | AWS Lab \| Cost Governance |
+This is an educational project using fictional data only. It is not a production healthcare system or a claim of HIPAA certification.
 
-### Email body template for each screenshot
+## AWS Services and Technologies
+- AWS Identity and Access Management (IAM)
+- Multi-Factor Authentication (MFA)
+- Amazon S3
+- Amazon S3 server-side encryption (SSE-S3)
+- AWS CloudTrail Event history
+- Amazon CloudWatch metrics
+- AWS Budgets
+- AWS Key Management Service (KMS) concepts
 
-**Project:** Secure AWS Healthcare Document Portal  
-**Evidence:** [Name of screenshot]  
-**Objective:** [What security control or AWS feature is being validated]  
-**Action:** [Exactly what you did]  
-**Observed result:** [What AWS actually showed]  
-**Security relevance:** [Why it matters for access control, encryption, monitoring, or cost]  
-**Skills demonstrated:** [Relevant AWS services and security concepts]  
+## Security Architecture
+![AWS Security Architecture](architecture.png)
 
-Only report verified results. Do not claim S3 object-level events are present in CloudTrail Event history unless separately configured and observed.
+## Security Controls Implemented
+- Enabled MFA for the root account and restricted IAM user.
+- Created an IAM group with scoped S3 permissions.
+- Configured an S3 bucket with Block Public Access enabled.
+- Enabled S3 versioning and default SSE-S3 encryption.
+- Used fictional healthcare documents to validate authorized access.
+- Reviewed AWS management events in CloudTrail Event history.
+- Viewed Amazon S3 NumberOfObjects metrics in CloudWatch.
+- Configured a $5 monthly AWS Budget.
+
+## Security Testing Results
+| Security Test | Expected Outcome | Verified Result |
+| --- | --- | --- |
+| Download an authorized S3 document | Allowed | PASS — Download successful |
+| Delete a protected S3 document | Denied | PASS — Access Denied |
+| Review IAM user activity in CloudTrail | Events visible | PASS — Management events found |
+
+## Important Technical Notes
+- S3 object-level operations are not automatically included in CloudTrail Event history. Separate data-event logging would be required to audit those operations.
+- SSE-S3 was implemented. Customer-managed KMS keys and SSE-KMS were studied but not configured.
+- No dedicated CloudTrail trail, CloudWatch alarm, or production deployment is claimed.
+
+## Skills Demonstrated
+AWS IAM, MFA, least privilege, S3 access controls, secure document storage, encryption, AWS audit review, CloudWatch metrics, troubleshooting, security validation, and technical documentation.
+
+## Portfolio Documentation
+- [Architecture Diagram](architecture.png)
+- [Resume and LinkedIn Descriptions](LINKEDIN_AND_RESUME.md)
+- [Screenshot Evidence Email Templates](SCREENSHOT_EMAILS.md)
+
+## Project Status
+Seven-day hands-on AWS security lab completed. GitHub documentation published; sanitized evidence screenshots may be added separately.
