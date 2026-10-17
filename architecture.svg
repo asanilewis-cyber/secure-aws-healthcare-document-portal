@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="680" viewBox="0 0 1120 680" role="img" aria-label="Secure AWS Healthcare Document Portal architecture">
+<rect width="1120" height="680" rx="28" fill="#f5f8fc"/>
+<text x="560" y="55" font-family="Arial" font-size="31" font-weight="bold" text-anchor="middle" fill="#18304f">Secure AWS Healthcare Document Portal</text>
+<text x="560" y="85" font-family="Arial" font-size="16" text-anchor="middle" fill="#526780">Personal lab • Fictional data • us-east-1</text>
+<rect x="36" y="145" width="225" height="168" rx="20" fill="#e5eafa" stroke="#647fbe" stroke-width="2"/>
+<text x="148" y="187" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold" fill="#243e74">IAM User</text>
+<text x="148" y="220" text-anchor="middle" font-family="Arial" font-size="18" fill="#243e74">MFA Enabled</text>
+<text x="148" y="252" text-anchor="middle" font-family="Arial" font-size="15" fill="#243e74">Group-based policies</text>
+<text x="148" y="279" text-anchor="middle" font-family="Arial" font-size="14" fill="#243e74">Least privilege</text>
+<rect x="363" y="145" width="355" height="168" rx="20" fill="#e4f5e9" stroke="#4c9b68" stroke-width="2"/>
+<text x="540" y="188" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold" fill="#215b3b">Amazon S3</text>
+<text x="540" y="221" text-anchor="middle" font-family="Arial" font-size="16" fill="#215b3b">Fictional healthcare document</text>
+<text x="540" y="249" text-anchor="middle" font-family="Arial" font-size="15" fill="#215b3b">Block Public Access • Versioning</text>
+<text x="540" y="276" text-anchor="middle" font-family="Arial" font-size="15" fill="#215b3b">SSE-S3 encryption at rest</text>
+<rect x="818" y="145" width="265" height="168" rx="20" fill="#fff1da" stroke="#c99038" stroke-width="2"/>
+<text x="950" y="187" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold" fill="#8b581a">Access Tests</text>
+<text x="950" y="225" text-anchor="middle" font-family="Arial" font-size="17" fill="#8b581a">Download: ALLOWED</text>
+<text x="950" y="257" text-anchor="middle" font-family="Arial" font-size="17" fill="#8b581a">Delete: DENIED</text>
+<path d="M261 228 H363" stroke="#4d647c" stroke-width="4" fill="none"/><path d="M350 219 L363 228 L350 237" fill="none" stroke="#4d647c" stroke-width="4"/>
+<path d="M718 228 H818" stroke="#4d647c" stroke-width="4" fill="none"/><path d="M805 219 L818 228 L805 237" fill="none" stroke="#4d647c" stroke-width="4"/>
+<rect x="80" y="414" width="290" height="160" rx="18" fill="#e6f4ff" stroke="#4e91c4" stroke-width="2"/>
+<text x="225" y="458" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold" fill="#215c86">CloudTrail</text>
+<text x="225" y="495" text-anchor="middle" font-family="Arial" font-size="16" fill="#215c86">Management Event history</text>
+<text x="225" y="527" text-anchor="middle" font-family="Arial" font-size="15" fill="#215c86">Read-only event lookup</text>
+<rect x="416" y="414" width="290" height="160" rx="18" fill="#f0e8fc" stroke="#9875c7" stroke-width="2"/>
+<text x="561" y="458" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold" fill="#63418f">CloudWatch</text>
+<text x="561" y="495" text-anchor="middle" font-family="Arial" font-size="16" fill="#63418f">S3 storage metrics</text>
+<text x="561" y="527" text-anchor="middle" font-family="Arial" font-size="15" fill="#63418f">NumberOfObjects graph</text>
+<rect x="752" y="414" width="290" height="160" rx="18" fill="#fce8ed" stroke="#bd6881" stroke-width="2"/>
+<text x="897" y="458" text-anchor="middle" font-family="Arial" font-size="23" font-weight="bold" fill="#8d3b57">AWS Budgets</text>
+<text x="897" y="495" text-anchor="middle" font-family="Arial" font-size="16" fill="#8d3b57">$5 monthly budget</text>
+<text x="897" y="527" text-anchor="middle" font-family="Arial" font-size="15" fill="#8d3b57">Cost awareness</text>
+<path d="M540 313 V365 H225 V414" stroke="#4d647c" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+<path d="M540 365 H561 V414" stroke="#4d647c" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+<text x="560" y="625" text-anchor="middle" font-family="Arial" font-size="16" fill="#526780">Dashed lines indicate related monitoring and audit views, not object-level CloudTrail logging.</text>
+</svg>
