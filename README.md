@@ -16,7 +16,7 @@ This is an educational project using fictional data only. It is not a production
 - AWS Key Management Service (KMS) concepts
 
 ## Security Architecture
-![AWS Security Architecture](architecture.png)
+![AWS Security Architecture](diagrams/architecture.png)
 
 ## Security Controls Implemented
 - Enabled MFA for the root account and restricted IAM user.
@@ -44,7 +44,7 @@ This is an educational project using fictional data only. It is not a production
 AWS IAM, MFA, least privilege, S3 access controls, secure document storage, encryption, AWS audit review, CloudWatch metrics, troubleshooting, security validation, and technical documentation.
 
 ## Portfolio Documentation
-- [Architecture Diagram](architecture.png)
+- [Architecture Diagram](diagrams/architecture.png)
 - [Resume and LinkedIn Descriptions](LINKEDIN_AND_RESUME.md)
 - [Screenshot Evidence Email Templates](SCREENSHOT_EMAILS.md)
 
